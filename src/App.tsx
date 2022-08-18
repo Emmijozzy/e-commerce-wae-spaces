@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import AppRoutes from './components/Routes/AppRoutes'
+import AppRoutes from './Routes/AppRoutes'
 import './App.css'
 import { fetchProducts } from './store/products/products.action'
 import { useAppDispatch } from './hooks'

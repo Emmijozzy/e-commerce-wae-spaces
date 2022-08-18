@@ -1,8 +1,41 @@
 .navbar {
    display: flex;
    justify-content: space-between;
+   align-items: center;
    padding: 10px 0 10px 0;
+   height: 70px;
+   width: 100%;
+   /* box-shadow: 1px 2px 2px #444; */
 }
 .navbarLogo {
    cursor: pointer;
+   background-image: url("https://assets.api.uizard.io/api/cdn/stream/81711725-17fb-46dd-a435-2809e9e53519.png");
+   background-position: center center;
+   background-size: contain;
+   background-repeat: no-repeat;
+   border-radius: 0px;
+   opacity: 1;
+   border: 0px none;
+   width: 150px;
+   height: 30px;
+}
+
+nav {
+   width: 50%;
+   height: 100%;
+}
+
+nav > ul{
+   width: 100%;
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 15%;
+}
+
+button {
+   outline: none;
+   border: none;
+   background: transparent;
 }

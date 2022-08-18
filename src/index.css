@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display:ital@0;1&display=swap');
+
+:root {
+   --primary-font: 'Playfair Display', serif;
+   --content-font: 'Inter', sans-serif;
+
+   --color-font: rgb(3, 3, 3);
+   --logo: "https://assets.api.uizard.io/api/cdn/stream/81711725-17fb-46dd-a435-2809e9e53519.png";
+
+   --Subhead-font-size: 28px;
+   --category-font-size: 20px;
+   --hero-font: 48px;
+}
+
 html,
 body {
    margin: 0;
@@ -10,7 +24,7 @@ body {
    padding: 0;
 }
 
-.link {
+.link , a {
    text-decoration: none;
    color: inherit;
 }

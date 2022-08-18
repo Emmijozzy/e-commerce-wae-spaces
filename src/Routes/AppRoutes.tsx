@@ -1,8 +1,8 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Home from '../../pages/Home/Home'
-import SuccessOrder from '../../pages/SuccessOrder/SuccessOrder'
-import Product from '../../pages/Product/Product'
+import Home from '../pages/Home/Home'
+import SuccessOrder from '../pages/SuccessOrder/SuccessOrder'
+import Product from '../pages/Product/Product'
 
 const AppRoutes = () => {
    return (

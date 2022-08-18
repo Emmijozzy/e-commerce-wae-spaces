@@ -1,32 +1,47 @@
 import { AppBar, Button, Container } from '@mui/material'
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
-import './navbar.css'
 import { FC } from 'react'
-import { useAppDispatch, useAppSelector } from '../../hooks'
+import './navbar.css'
+import { useNavigate, NavLink } from 'react-router-dom'
+import { FaSearch, FaShoppingCart } from 'react-icons/fa'
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
 import { toggleCart } from '../../store/cart/cart.slice'
-import { useNavigate } from 'react-router-dom'
+import { useAppDispatch, useAppSelector } from '../../hooks'
 
 const Navbar: FC = () => {
-   const dispatch = useAppDispatch()
-   const navigate = useNavigate()
-   const { cartItems } = useAppSelector((state) => state.cartReducer)
-   return (
-      <AppBar sx={{ zIndex: 100 }} position={'fixed'} color={'default'}>
-         <Container maxWidth={'xl'}>
-            <div className={'navbar'}>
-               <h1 onClick={() => navigate('/')} className={'navbarLogo'}>
-                  MyStore
-               </h1>
-               <Button
-                  onClick={() => dispatch(toggleCart(true))}
-                  startIcon={<ShoppingCartIcon />}
-                  variant={'outlined'}
-               >
-                  Cart({cartItems.length})
-               </Button>
+    const dispatch = useAppDispatch()
+    const navigate = useNavigate()
+    const { cartItems } = useAppSelector((state) => state.cartReducer)
+
+    return (
+        <div className='container'>
+             <div className={'navbar'}>
+                <div onClick={() => navigate('/')} className='navbarLogo'>
+                </div>
+
+                <nav className='flex-center'>
+                    <ul>
+                        <li><NavLink to='./'> Home</NavLink></li>
+                        <li><NavLink to='./'> Category</NavLink></li>
+                        <li><NavLink to='./'> Contact</NavLink></li>
+                    </ul>
+                </nav>
+
+                <div className='navicon'>
+                    <button
+                    onClick={() => dispatch(toggleCart(true))}
+                    >
+                        <FaSearch size={'2em'} />
+                    </button>
+
+                    <button
+                    onClick={() => dispatch(toggleCart(true))}
+                    >
+                        <FaShoppingCart size={'2em'} />
+                        Cart({cartItems.length})
+                    </button>
+                </div>
             </div>
-         </Container>
-      </AppBar>
-   )
-}
-export default Navbar
+        </div>
+    )
+ }
+ export default Navbar
