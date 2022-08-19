@@ -7,6 +7,12 @@
    width: 100%;
    /* box-shadow: 1px 2px 2px #444; */
 }
+
+.nav-container{
+   margin: 0 60px;
+   display: flex;
+   height: 100%;
+}
 .navbarLogo {
    cursor: pointer;
    background-image: url("https://assets.api.uizard.io/api/cdn/stream/81711725-17fb-46dd-a435-2809e9e53519.png");
@@ -25,6 +31,12 @@ nav {
    height: 100%;
 }
 
+.navicon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
 nav > ul{
    width: 100%;
    list-style: none;
@@ -38,4 +50,13 @@ button {
    outline: none;
    border: none;
    background: transparent;
+   margin: 0 10px;
+   position: relative;
+}
+
+button p {
+   position: absolute;
+   top: -1;
+   top: 7px;
+   right: -10px;
 }

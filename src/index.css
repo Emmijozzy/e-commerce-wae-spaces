@@ -4,12 +4,13 @@
    --primary-font: 'Playfair Display', serif;
    --content-font: 'Inter', sans-serif;
 
-   --color-font: rgb(3, 3, 3);
+   --primary-color: rgb(3, 3, 3);
+   --sec-color: #fff
    --logo: "https://assets.api.uizard.io/api/cdn/stream/81711725-17fb-46dd-a435-2809e9e53519.png";
 
-   --Subhead-font-size: 28px;
-   --category-font-size: 20px;
-   --hero-font: 48px;
+   --Subhead-font-size: 5em;
+   --category-font-size: 2em;
+   --hero-font: 100px;
 }
 
 html,

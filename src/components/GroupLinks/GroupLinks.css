@@ -1,0 +1,27 @@
+.group_link {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    /* justify-content:flex-start; */
+    /* text-align: left; */
+    width: 15%;
+    gap: 10px;
+}
+
+.head {
+    font-size: 1.3em;
+    font-family: var(--content-font);
+    color: #a6a5a5;
+    list-style: none;
+}
+
+.link {
+    font-family: var(--primary-font);
+    font-size: 2em;
+    text-align: left;
+}
+
+.link a {
+    font-family: var(--primary-font);   
+    align-items: left;
+}

@@ -1,0 +1,27 @@
+.cat_card {
+    width: 20%;
+    margin: 10px;
+}
+
+.column {
+    width: 25em;
+    height: 33em;
+        display: flex;
+        flex-direction: column;
+ }
+
+
+.img_card {
+    height: 32em;
+    width: 20em;
+}
+
+.img_card img {
+    width: 100%;
+}
+
+.category_text {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: var(--category-font-size);
+}

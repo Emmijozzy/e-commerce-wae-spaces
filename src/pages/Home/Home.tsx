@@ -1,5 +1,15 @@
 import React from 'react'
 import './home.css'
+import 'swiper/css'
+import Hero from '../../components/Hero/Hero'
+import About from '../../components/About/About'
+import Category from '../../components/Category/Category'
+import Quote from '../../components/Quote/Quote'
+import Products from '../../components/Products/Products'
+import Blogs from '../../components/Blogs/Blogs'
+import Newsletter from '../../components/Newsletter/Newsletter'
+import Footer from '../../components/Footer/Footer'
+import Product from '../Product/Product'
 // import Sidebar from '../../components/Sidebar/Sidebar'
 // import ProductList from '../../components/ProductList/ProductList'
 // import AlertComponent from '../../components/Alert/AlertComponent'
@@ -12,9 +22,13 @@ const Home = () => {
     return (
         <>
             <div className={'home'}>
-                <div className={'homeSidebar'}>
-                    Home
-                </div>
+                <Hero />
+                <About />
+                <Category />
+                <Quote />
+                <Products />
+                <Blogs />
+                <Product />
             </div>
         </>
     )

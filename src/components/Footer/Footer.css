@@ -1,0 +1,43 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 80px;
+}
+
+.footer_links {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.logo {
+    margin-right: 30px;
+    cursor: pointer;
+    background-image: url("https://assets.api.uizard.io/api/cdn/stream/81711725-17fb-46dd-a435-2809e9e53519.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    opacity: 1;
+    border: 0px none;
+    width: 190px;
+    height: 40px;
+ }
+
+ .footer_base {
+    width: 100%;
+    text-align: center;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -4em;
+ }
+
+ .footer_base p {
+    font-size: 1.3em;
+    font-family: var(--content-font);
+    color: #a6a5a5;
+    list-style: none;
+ }

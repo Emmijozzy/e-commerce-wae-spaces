@@ -1,0 +1,24 @@
+.app_category {
+    width: 97vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper_box {
+    margin: 0 60px;
+    width: 80%;
+    margin-right: -1em;
+}
+
+.category_box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+

@@ -13,7 +13,7 @@ const Navbar: FC = () => {
     const { cartItems } = useAppSelector((state) => state.cartReducer)
 
     return (
-        <div className='container'>
+        <div className='nav-container'>
              <div className={'navbar'}>
                 <div onClick={() => navigate('/')} className='navbarLogo'>
                 </div>
@@ -37,7 +37,7 @@ const Navbar: FC = () => {
                     onClick={() => dispatch(toggleCart(true))}
                     >
                         <FaShoppingCart size={'2em'} />
-                        Cart({cartItems.length})
+                        <p>{cartItems.length}</p>
                     </button>
                 </div>
             </div>

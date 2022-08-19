@@ -1,0 +1,10 @@
+.app_quote {
+    margin: 3em 0;
+}
+.quote_text {
+    font-size: 4.5em;
+    font-family: var(--primary-font);
+    font-weight: 300;
+    text-align: center;
+    width: 95%;
+}

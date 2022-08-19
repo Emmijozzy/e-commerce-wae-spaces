@@ -1,5 +1,8 @@
 .container {
    margin: 0 60px;
+   display: flex;
+   height: 100%;
+   width: 100%;
 }
 
 .flex-center {
@@ -8,6 +11,15 @@
    justify-content: center;
 }
 
-.pages {
-   margin-top: 50px;
+.sub-head {
+   font-family: var(--primary-font);
+   color: var(--primary-color);
+   font-size: var(--Subhead-font-size);
+   font-weight: 300;
+   margin: 0.5em
 }
+
+.pages {
+   margin-top: 60px;
+}
+

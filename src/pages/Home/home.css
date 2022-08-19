@@ -1,6 +1,9 @@
 .home {
    display: flex;
    gap: 30px;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
 }
 .homeProductList{
    margin-bottom: 20px;
