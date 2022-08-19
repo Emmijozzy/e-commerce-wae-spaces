@@ -1,5 +1,6 @@
 import React from 'react'
 import './product.css'
+import { useNavigate } from 'react-router-dom';
 
 interface product {
     product: {
@@ -11,8 +12,9 @@ interface product {
 }
 
 const Product = ({product}: product) => {
+    const navigate = useNavigate()
   return (
-    <div className='app_product'>
+    <div className='app_product' onClick={() => navigate('/product')}>
         <div className="img_box">
             {product.sold && <h6 className='sold'>Sold Out</h6>}
             <img src={product.image} alt="" />

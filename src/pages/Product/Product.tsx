@@ -1,12 +1,14 @@
 import React from 'react'
+import './product.css'
 import Carosel from '../../components/Carosel/Carosel'
 
 
 const Product = () => {
     
   return (
-    <div className='product'>
-        <div className="cat_side">
+      <div className='product'>
+        <Carosel />
+        <div className="cart_side">
             <div className="sold-out">Sold Out</div>
             <h4 className="name">Plant 3</h4>
             <h3 className="price">50#</h3>
@@ -17,9 +19,9 @@ const Product = () => {
                     <span className="figure">1</span>
                     <button>+</button>
                 </div>
+                <button className='cart-btn'>Add to Cart</button>
             </div>
         </div>
-        <Carosel />
     </div>
   )
 }

@@ -28,7 +28,6 @@ const Home = () => {
                 <Quote />
                 <Products />
                 <Blogs />
-                <Product />
             </div>
         </>
     )
