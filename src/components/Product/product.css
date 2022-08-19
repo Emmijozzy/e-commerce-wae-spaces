@@ -41,7 +41,7 @@
     align-self:flex-end;
 }
 
-.price {
+.product_price {
     font-size: 3em;
     font-family: var(--primary-font);
     color: #333;
