@@ -1,5 +1,4 @@
 .app_hero {
-    min-height: 600px;
     height: 100%;
     width: 100%;   
     display: flex;
@@ -14,11 +13,9 @@
     align-self: center;
     justify-self: center;
     gap: 20%;
-    margin-top: -8em
 }
 
 .hero_text {
-    font-size: var(--hero-font);
     font-family: var(--primary-font);
     font-weight: 300;
     width: auto;
@@ -42,6 +39,70 @@
     width: 12em;
     margin: 35px 0 0;
     text-transform: uppercase;
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1920px) {
+    .app_hero {
+         min-height: 90vh;
+    }
+    
+    .hero_text {
+        font-size: var(--hero-font);
+    }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1240px) {
+    .app_hero {
+        min-height: 600px;
+   }
+
+    .hero_text {
+        font-size: var(--hero-font);
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width: 850px) {
+    .app_hero {
+        min-height: 450px;
+   }
+   
+    .hero_text {
+        font-size: 2.5em;
+        letter-spacing: 1px;
+    }  
+    
+    .hero_content-text {
+        font-size: 16px;
+    }
+
+    .action_btn {
+        width: 10em;
+        height: 2em;
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width: 650px) {
+    .app_hero {
+        min-height: 320px;
+   }
+   
+    .hero_text {
+        font-size: 1.5em;
+        letter-spacing: 1px;
+        width: 100%;
+        margin-bottom: 20px;
+    }  
+    
+    .hero_content-text {
+        font-size: 11px;
+    }
+
+    .action_btn {
+        width: 10em;
+        height: 3em;
+        font-size: 11px;
+        margin-top: 20px;
+    }
 }
 
 

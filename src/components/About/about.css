@@ -18,3 +18,31 @@
     opacity: 1;
     border: 0px;
 }
+
+@media screen and (min-width: 1201px) and (max-width: 1920px) {
+
+}
+
+@media screen and (min-width: 851px) and (max-width: 1240px) {
+
+}
+
+@media screen and (min-width: 651px) and (max-width: 850px) {
+    .app_about {
+        min-height:100%;
+    }
+
+    .about-img {
+        height: 1000px
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app_about {
+        min-height:100%;
+    }
+
+    .about-img {
+        height: 600px
+    }
+}

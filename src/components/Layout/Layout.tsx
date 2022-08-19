@@ -16,8 +16,8 @@ const Layout: FC<LayoutProps> = ({ children }) => {
          <Container maxWidth={'xl'}>
             <div className={'pages'}>{children}</div>
             <Cart />
-         <Newsletter />
-         <Footer />
+         {/* <Newsletter />
+         <Footer /> */}
          </Container>
       </>
    )
