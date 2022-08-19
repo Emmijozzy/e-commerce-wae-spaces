@@ -39,7 +39,7 @@ const Category: FC = () => {
     <div className="app_category ">
         <div className="container flex-center">
             <div className="category_box">
-                <h2 className='sub-head'>Category</h2>
+                <h2 className='sub-head'>Categories</h2>
                 <div className="swiper_box">
                     <Swiper 
                         slidesPerView={3}

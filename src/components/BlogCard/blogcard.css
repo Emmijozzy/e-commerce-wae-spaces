@@ -22,12 +22,11 @@
     padding: 2em;
     width: 15em;
     height: 3em;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .author p {
     align-items: center;
-    margin: 5px 0;
     font-family: var(--content-font);
     color: #777;
     font-size: 1.3em; 
