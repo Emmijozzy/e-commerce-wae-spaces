@@ -1,19 +1,21 @@
 .app_product {
     width: 30%;
-    height: 45em;
-    display: grid;
+    height: 40em;
+    display: grid; 
     grid-template-rows: 80% 10% 5%;
     align-items: center;
     justify-content: center;
+    margin: 0 30px;
 }
 
 .img_box {
-    display: flex;
+    /* display: flex; */ 
     align-items: stretch;
-    width: 100%;
+    /* width: 103%; */
     height: 100%;
     position: relative;
-    /* margin-top: -10em; */
+    overflow: hidden;
+    grid-row: 1;
 }
 
 .sold {
@@ -25,13 +27,15 @@
     font-size: 1.5em;
     background-color: #333;
     color: #fff;
+    z-index: 2222;
 }
 
-.product img {
+.img_box img {
     width: 100%;
     position: relative;
-    top: 1px;
-    left: -1px;
+    /* top: 1px;
+    left: -1px; */
+    transform: translateY(-15%);
 }
 
 .plant_type {
