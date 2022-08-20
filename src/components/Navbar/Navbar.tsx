@@ -6,15 +6,17 @@ import { FaSearch, FaShoppingCart } from 'react-icons/fa'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
 import { toggleCart } from '../../store/cart/cart.slice'
 import { useAppDispatch, useAppSelector } from '../../hooks'
+import ResponsiveNav from '../ResponsiveNav/ResponsiveNav'
 
 const Navbar: FC = () => {
     const dispatch = useAppDispatch()
     const navigate = useNavigate()
     const { cartItems } = useAppSelector((state) => state.cartReducer)
 
-    return (
+   return (
         <div className='nav-container'>
              <div className={'navbar'}>
+                <ResponsiveNav />
                 <div onClick={() => navigate('/')} className='navbarLogo'>
                 </div>
 
