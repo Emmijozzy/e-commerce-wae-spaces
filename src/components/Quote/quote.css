@@ -18,7 +18,13 @@
 }
 
 @media screen and (min-width: 651px) and (max-width: 850px) {
-
+    .app_quote {
+        margin-top: 0;
+    }
+    
+    .quote_text {
+        font-size: 2em;
+    }
 }
 
 @media screen and (max-width: 650px) {
