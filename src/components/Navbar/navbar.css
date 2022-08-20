@@ -27,6 +27,9 @@
 }
 
 nav {
+   display: flex;
+   align-items: center;
+   justify-content: center;
    width: 50%;
    height: 100%;
 }
@@ -59,4 +62,26 @@ button p {
    top: -1;
    top: 7px;
    right: -10px;
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1920px) {
+
+}
+
+@media screen and (min-width: 851px) and (max-width: 1240px) {
+
+}
+
+@media screen and (min-width: 651px) and (max-width: 850px) {
+
+}
+
+@media screen and (max-width: 650px) {
+   .nav-container {
+      margin: 0 30px;
+   }
+   
+   nav {
+      display: none;
+   }
 }

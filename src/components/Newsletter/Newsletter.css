@@ -58,6 +58,10 @@ input {
     form {
         width:  80%;
     }
+
+    input {
+        width: 60%;
+    }
 }
 
 @media screen and (min-width: 651px) and (max-width: 850px) {

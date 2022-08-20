@@ -18,7 +18,7 @@ const Navbar: FC = () => {
                 <div onClick={() => navigate('/')} className='navbarLogo'>
                 </div>
 
-                <nav className='flex-center'>
+                <nav className=''>
                     <ul>
                         <li><NavLink to='./'> Home</NavLink></li>
                         <li><NavLink to='./'> Category</NavLink></li>
