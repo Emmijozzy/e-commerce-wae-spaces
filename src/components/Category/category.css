@@ -31,7 +31,11 @@
 }
 
 @media screen and (min-width: 651px) and (max-width: 850px) {
-
+    .swiper_box {
+        margin: auto 0;
+        width: 90%;
+        height: 460px;
+    }
 }
 
 @media screen and (max-width: 650px) {

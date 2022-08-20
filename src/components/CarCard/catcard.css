@@ -37,7 +37,24 @@
 }
 
 @media screen and (min-width: 651px) and (max-width: 850px) {
+    .column {
+        width: 14em;
+        height: 27em;
+    }
 
+    .cat_card {
+        height: 447px;
+        width: 12em;
+    }
+
+    .img_card {
+        height: 42em;
+        width: 14em;
+    }
+
+    .category_text {
+        font-size: 24px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -46,7 +63,7 @@
     }
 
     .cat_card {
-        height: 320px;
+        height: 290px;
     }
 
     .img_card {

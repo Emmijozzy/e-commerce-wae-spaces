@@ -25,8 +25,8 @@ const Home = () => {
                 <Hero />
                 <About />
                 <Category />
-                {/* <Quote />
-                <Products />
+                <Quote />
+                {/* <Products />
                 <Blogs /> */}
             </div>
         </>

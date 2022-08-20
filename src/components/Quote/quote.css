@@ -8,3 +8,25 @@
     text-align: center;
     width: 95%;
 }
+
+@media screen and (min-width: 1201px) and (max-width: 1920px) {
+
+}
+
+@media screen and (min-width: 851px) and (max-width: 1240px) {
+
+}
+
+@media screen and (min-width: 651px) and (max-width: 850px) {
+
+}
+
+@media screen and (max-width: 650px) {
+    .app_quote {
+        margin: 0 0 2em;
+    }
+    
+    .quote_text {
+        font-size: 1em;
+    }
+}
