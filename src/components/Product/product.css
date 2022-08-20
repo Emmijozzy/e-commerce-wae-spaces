@@ -102,8 +102,8 @@
 @media screen and (max-width: 650px) {
     .app_product {
         width: 90%;
-        height: 30em;
-        margin: 20px auto;
+        height: 40em;
+        margin: 0 auto;
     }
 
     .sold {
@@ -117,5 +117,9 @@
 
     .product_price {
         font-size: 2em;
+    }
+
+    .img_box img {
+        transform: translate(0);
     }
 }

@@ -70,7 +70,7 @@
     .blog_card {
         width: 45%;
         margin: 0 20px;
-        grid-template-rows: 20em 3em 10em;
+        grid-template-rows: 20em 3em 5em;
     }
 
     .author {
@@ -111,7 +111,7 @@
     .blog_card {
         width: 45%;
         margin: 0 20px;
-        grid-template-rows: 15em 3em 10em;
+        grid-template-rows: 15em 3em 6em;
     }
 
     .author {

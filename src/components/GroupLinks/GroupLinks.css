@@ -25,3 +25,25 @@
     font-family: var(--primary-font);   
     align-items: left;
 }
+
+@media screen and (min-width: 1201px) and (max-width: 1920px) {
+
+}
+
+@media screen and (min-width: 851px) and (max-width: 1240px) {
+
+}
+
+@media screen and (min-width: 651px) and (max-width: 850px) {
+    .group_link {
+        width: 20%;
+    }
+
+    .link {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+}
