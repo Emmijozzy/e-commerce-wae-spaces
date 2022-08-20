@@ -26,3 +26,35 @@
     font-weight: 300;
     font-size: var(--category-font-size);
 }
+
+
+@media screen and (min-width: 1201px) and (max-width: 1920px) {
+
+}
+
+@media screen and (min-width: 851px) and (max-width: 1240px) {
+
+}
+
+@media screen and (min-width: 651px) and (max-width: 850px) {
+
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 7em;
+    }
+
+    .cat_card {
+        height: 320px;
+    }
+
+    .img_card {
+        height: 15em;
+        width: 7em;
+    }
+
+    .category_text {
+        font-size: 14px;
+    }
+}

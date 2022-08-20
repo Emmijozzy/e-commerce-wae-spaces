@@ -24,7 +24,7 @@ const Home = () => {
             <div className={'home'}>
                 <Hero />
                 <About />
-                {/* <Category /> */}
+                <Category />
                 {/* <Quote />
                 <Products />
                 <Blogs /> */}
