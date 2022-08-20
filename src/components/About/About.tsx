@@ -1,11 +1,13 @@
 import React, { FC } from 'react'
 import './about.css'
-
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 const About: FC = () => {
   return (
     <div className="app_about">
       <div className='container'>
-        <div className="about-img"></div>
+          <div className="about-img">
+            <LazyLoadImage className='about_img' src='https://assets.api.uizard.io/api/cdn/stream/c8515796-8789-48b2-9884-dec4cd6778f4.jpg' width={'100%'} alt="" />
+          </div>
       </div>
     </div>
   )

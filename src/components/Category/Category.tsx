@@ -9,6 +9,8 @@ import CatCard from '../CarCard/CatCard'
 import { Swiper, SwiperSlide } from 'swiper/react'
 // import required modules
 import { Pagination, Navigation } from "swiper";
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+
 
 const Category: FC = () => {
     const categoryData = [

@@ -1,5 +1,6 @@
 import React from 'react'
 import './blogcard.css'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 interface blogs {
     blog: {
@@ -18,7 +19,7 @@ const BlogCard = ({blog}: blogs) => {
                 <p>Written By</p>
                 <h5 className='author_name'>{blog.author}</h5>
             </div>
-            <img src={blog.img} alt="" />
+            <LazyLoadImage src={blog.img} alt="" />
         </div>
         <p className="edition">Edition {blog.edition}</p>
         <h3 className="title">{blog.title}</h3>

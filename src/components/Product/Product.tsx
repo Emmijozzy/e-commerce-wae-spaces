@@ -1,6 +1,7 @@
 import React from 'react'
 import './product.css'
 import { useNavigate } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 interface product {
     product: {
@@ -17,7 +18,7 @@ const Product = ({product}: product) => {
     <div className='app_product' onClick={() => navigate('/product')}>
         <div className="img_box">
             {product.sold && <h6 className='sold'>Sold Out</h6>}
-            <img src={product.image} alt="" />
+            <LazyLoadImage src={product.image} alt="" />
         </div>
         <p className="plant_type">{product.name}</p>
         <h4 className='product_price'>{product.price}&#8364;</h4>
