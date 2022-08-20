@@ -53,3 +53,27 @@
     width: 100%;
     height: 100%;
 }
+
+@media screen and (min-width: 1201px) and (max-width: 1920px) {
+
+}
+
+@media screen and (min-width: 851px) and (max-width: 1240px) {
+    .carosel {
+        height: 45em;
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width: 850px) {
+    .carosel {
+        height: 35em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .carosel {
+        height: 35em;
+        width: 100%;
+        margin: 0 auto 1em;
+    }
+}

@@ -45,5 +45,11 @@
 }
 
 @media screen and (max-width: 650px) {
+    .group_link {
+        width: 100%;
+    }
 
+    .link {
+        font-size: 1em;
+    }
 }

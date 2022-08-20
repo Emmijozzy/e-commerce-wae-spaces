@@ -82,6 +82,7 @@
 
     .footer_links {
         flex-direction: column;
+        gap: 15px
     }
 
     .footer_base p {
