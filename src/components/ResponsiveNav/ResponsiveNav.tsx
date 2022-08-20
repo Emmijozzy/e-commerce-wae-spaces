@@ -3,7 +3,7 @@ import './responsiveNav.css'
 import { NavLink } from 'react-router-dom'
 
 const ResponsiveNav = () => {
-    const [ openNav, setNav ] = useState(true)
+    const [ openNav, setNav ] = useState(false)
     const resNavElem = (
         <div className='res_nav' onClick={() => setNav(!openNav)}>
             <span className={`bar ${openNav?'bar1' : ''}`}></span>
