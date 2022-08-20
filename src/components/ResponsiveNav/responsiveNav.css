@@ -50,6 +50,10 @@
     transition-duration: 1s;
 }
 
+.nav li {
+    margin: 5px 0;
+}
+
 
   
 .close {
@@ -59,4 +63,10 @@
 
 .open {
     opacity: 1; 
+}
+
+@media screen and (min-width: 651px) {
+    .responsive_nav {
+        display: none;
+    }
 }
