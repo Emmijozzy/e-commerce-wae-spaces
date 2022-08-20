@@ -21,7 +21,7 @@
     .app_quote {
         margin-top: 0;
     }
-    
+
     .quote_text {
         font-size: 2em;
     }
@@ -33,6 +33,6 @@
     }
     
     .quote_text {
-        font-size: 1em;
+        font-size: 1.1em;
     }
 }
