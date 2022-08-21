@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux'
 import Slider from 'react-slick'
 
 const Products = () => {
-      const products = useSelector((state: RootState) => state.products )
+      const { products } = useSelector((state: RootState) => state.productsReducer )
   const setting = {
     dots: true,
     Infinity: true,

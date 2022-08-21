@@ -4,8 +4,9 @@ import { Button, ButtonGroup, Fab } from '@mui/material'
 import RemoveIcon from '@mui/icons-material/Remove'
 import AddIcon from '@mui/icons-material/Add'
 import DeleteIcon from '@mui/icons-material/Delete'
-import { CartItem } from '../../types/Dindex'
-import { useAppDispatch } from '../../hooks'
+import { CartItem } from '../../types/index'
+// import { useAppDispatch } from '../../hooks'
+import { useDispatch } from 'react-redux'
 import {
    decreaseCount,
    increaseCount,
@@ -19,7 +20,7 @@ interface CartItemProps {
 
 const CartProduct: FC<CartItemProps> = ({ product }) => {
    const [count, setCount] = useState(product.quantity)
-   const dispatch = useAppDispatch()
+   const dispatch = useDispatch()
    const handleRemove = () => {
       dispatch(removeProduct(product))
       dispatch(toggleItemRemoved(true))
@@ -41,12 +42,12 @@ const CartProduct: FC<CartItemProps> = ({ product }) => {
                <img
                   className={'cartItemImg'}
                   src={product.product.image}
-                  alt={product.product.title}
+                  alt={product.product.name}
                />
             </div>
 
             <div className={'cartItemDescription'}>
-               <h4>{product.product.title}</h4>
+               <h4>{product.product.name}</h4>
                <h2 className={'cartItemPrice'}>{product.product.price} $</h2>
                <div className={'cartItemCount'}>
                   <ButtonGroup>

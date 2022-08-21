@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { CSSProperties, useState } from 'react'
 import './home.css'
 import 'swiper/css'
 import Hero from '../../components/Hero/Hero'
@@ -16,10 +16,19 @@ import SliderExaple from '../../components/SliderExample/SliderExample'
 // import AlertComponent from '../../components/Alert/AlertComponent'
 // import { useAppDispatch, useAppSelector } from '../../hooks'
 // import { toggleItemAdded } from '../../store/cart/cart.slice'
+import ClipLoader from "react-spinners/ClipLoader";
 
+const override: CSSProperties = {
+    display: "block",
+    margin: "0 auto",
+    borderColor: "red",
+  };
+  
 const Home = () => {
     // const { itemAdded } = useAppSelector((state) => state.cartReducer)
     // const dispatch = useAppDispatch()
+    let [loading, setLoading] = useState(true);
+    let [color, setColor] = useState("#ffffff");
     return (
         <>
             <div className={'home'}>
@@ -29,7 +38,6 @@ const Home = () => {
                 <Quote />
                 <Products />
                 <Blogs />
-                {/* <SliderExaple /> */}
             </div>
         </>
     )

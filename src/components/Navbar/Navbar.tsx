@@ -5,13 +5,14 @@ import { useNavigate, NavLink } from 'react-router-dom'
 import { FaSearch, FaShoppingCart } from 'react-icons/fa'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
 import { toggleCart } from '../../store/cart/cart.slice'
-import { useAppDispatch, useAppSelector } from '../../hooks'
+import { useDispatch, useSelector } from 'react-redux'
 import ResponsiveNav from '../ResponsiveNav/ResponsiveNav'
+import { RootState } from '../../store'
 
 const Navbar: FC = () => {
-    const dispatch = useAppDispatch()
+    const dispatch = useDispatch()
     const navigate = useNavigate()
-    // const { cartItems } = useAppSelector((state) => state.cartReducer)
+    const { cartItems } = useSelector((state: RootState) => state.cartReducer)
 
    return (
         <div className='nav-container'>
@@ -39,7 +40,7 @@ const Navbar: FC = () => {
                     onClick={() => dispatch(toggleCart(true))}
                     >
                         <FaShoppingCart size={'2em'} />
-                        {/* <p>*{cartItems.length}</p> */}
+                        <p>*{cartItems.length}</p>
                     </button>
                 </div>
             </div>

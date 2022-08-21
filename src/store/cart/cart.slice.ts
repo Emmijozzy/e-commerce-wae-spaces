@@ -1,4 +1,4 @@
-import { CartItem } from '../../types/Dindex'
+import { CartItem } from '../../types/index'
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
 interface CartState {

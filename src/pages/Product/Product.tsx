@@ -1,20 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './product.css'
 import Carosel from '../../components/Carosel/Carosel'
 import { useParams } from 'react-router-dom'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '../../store'
-import produce from 'immer'
+// import produce from 'immer'
+import { addProduct } from '../../store/cart/cart.slice'
 
 
 const Product = () => {
+    const [quantity , setQuantity] = useState(1)
+    const [open, setOpen] = useState(false)
+
     let { id } = useParams();
     const idNum = id ? +id : null
-    const products = useSelector((state: RootState) => state.products)
+    const { products } = useSelector((state: RootState) => state.productsReducer )
     const product = products.filter((produce) => (
          produce.id === idNum
     ))
     const foundProduct = product[0]
+
+    const dispatch = useDispatch()
+    const { cartItems, itemAdded } = useSelector((state: RootState) => state.cartReducer)
+    
+    const handleClickItem = () => {
+      setOpen(true)
+   }
+
   return (
       <div className='product'>
         <Carosel image={foundProduct.image} />
@@ -25,11 +37,11 @@ const Product = () => {
             <div className="quantity">
                 <p>Quantity</p>
                 <div className="quantity_box">
-                    <button>-</button>
-                    <span className="figure">1</span>
-                    <button>+</button>
+                    <button onClick={() => setQuantity((prevQ) => (prevQ - 1))}>-</button>
+                    <span  className="figure">{quantity}</span>
+                    <button onClick={() => setQuantity((prevQ) => (prevQ + 1))}>+</button>
                 </div>
-                <button className='cart-btn'>Add to Cart</button>
+                <button onClick={() => dispatch(addProduct({product: foundProduct, quantity}))} className='cart-btn'>Add to Cart</button>
             </div>
         </div>
     </div>
