@@ -11,7 +11,7 @@ import ResponsiveNav from '../ResponsiveNav/ResponsiveNav'
 const Navbar: FC = () => {
     const dispatch = useAppDispatch()
     const navigate = useNavigate()
-    const { cartItems } = useAppSelector((state) => state.cartReducer)
+    // const { cartItems } = useAppSelector((state) => state.cartReducer)
 
    return (
         <div className='nav-container'>
@@ -39,7 +39,7 @@ const Navbar: FC = () => {
                     onClick={() => dispatch(toggleCart(true))}
                     >
                         <FaShoppingCart size={'2em'} />
-                        <p>{cartItems.length}</p>
+                        {/* <p>*{cartItems.length}</p> */}
                     </button>
                 </div>
             </div>

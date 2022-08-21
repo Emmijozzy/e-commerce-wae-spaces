@@ -1,26 +1,24 @@
 import React from 'react'
+import type { RootState } from '../../store'
 import Features from '../Features/Features'
 import Product from '../Product/Product'
 import './products.css'
+import { useSelector } from 'react-redux'
+import Slider from 'react-slick'
 
 const Products = () => {
-  const products = [
-    {
-      name: 'Plant1',
-      price:  150,
-      image: 'https://assets.api.uizard.io/api/cdn/stream/ab148d11-028d-4fe4-af04-8c2710fca1cd.jpg',
-      sold: false
-    },
-    {
-      name: 'Plant2',
-      price:  50,
-      image: 'https://assets.api.uizard.io/api/cdn/stream/c0dfbf89-8d77-42ab-ad3b-155bd55178da.jpg',
-      sold: true
-    }
-  ]
+      const products = useSelector((state: RootState) => state.products )
+  const setting = {
+    dots: true,
+    Infinity: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1
+  }
   return (
     <div className='app_products'>
       <Features />
+
       {products.map((product, i) => (<Product key={i} product={product} />))}
     </div>
   )

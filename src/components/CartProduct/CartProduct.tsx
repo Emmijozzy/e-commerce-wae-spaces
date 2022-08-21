@@ -4,7 +4,7 @@ import { Button, ButtonGroup, Fab } from '@mui/material'
 import RemoveIcon from '@mui/icons-material/Remove'
 import AddIcon from '@mui/icons-material/Add'
 import DeleteIcon from '@mui/icons-material/Delete'
-import { CartItem } from '../../types'
+import { CartItem } from '../../types/Dindex'
 import { useAppDispatch } from '../../hooks'
 import {
    decreaseCount,

@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import Navbar from '../Navbar/Navbar'
 import { Container } from '@mui/material'
-import Cart from '../Cart/Cart'
+// import Cart from '../Cart/Cart'
 import Newsletter from '../Newsletter/Newsletter'
 import Footer from '../Footer/Footer'
 
@@ -15,7 +15,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
          <Navbar />
          <Container maxWidth={'xl'}>
             <div className={'pages'}>{children}</div>
-            <Cart />
+            {/* <Cart /> */}
          <Newsletter />
          <Footer />
          </Container>

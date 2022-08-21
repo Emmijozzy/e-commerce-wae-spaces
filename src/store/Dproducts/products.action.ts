@@ -1,7 +1,7 @@
-import { AppDispatch } from '../index'
+import { AppDispatch } from '../Dindex'
 import { errorFetching, startFetching, successFetching } from './products.slice'
 import axios from 'axios'
-import { IProduct } from '../../types'
+import { IProduct } from '../../types/Dindex'
 
 export const fetchProducts = () => async (dispatch: AppDispatch) => {
    try {

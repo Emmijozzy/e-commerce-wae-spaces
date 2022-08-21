@@ -5,6 +5,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 interface product {
     product: {
+        id: number
         name: string;
         price: number;
         image: string;
@@ -15,7 +16,7 @@ interface product {
 const Product = ({product}: product) => {
     const navigate = useNavigate()
   return (
-    <div className='app_product' onClick={() => navigate('/product')}>
+    <div className='app_product' onClick={() => navigate(`/product/${product.id}`)}>
         <div className="img_box">
             {product.sold && <h6 className='sold'>Sold Out</h6>}
             <LazyLoadImage src={product.image} alt="" />
