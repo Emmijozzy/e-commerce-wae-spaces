@@ -1,5 +1,5 @@
 .app_product {
-    width: 30%;
+    width: 90%;
     height: 40em;
     display: grid; 
     grid-template-rows: 80% 10% 5%;
@@ -59,7 +59,7 @@
 
 @media screen and (min-width: 851px) and (max-width: 1240px) {
     .app_product {
-        width: 30%;
+        width: 90%;
         height: 28em;
         margin: 0 10px 30px;
     }
@@ -80,7 +80,7 @@
 
 @media screen and (min-width: 651px) and (max-width: 850px) {
     .app_product {
-        width: 40%;
+        width: 90%;
         height: 20em;
         margin: 0 10px 30px;
     }
@@ -102,7 +102,7 @@
 @media screen and (max-width: 650px) {
     .app_product {
         width: 90%;
-        height: 40em;
+        height: 32em;
         margin: 0 auto;
     }
 

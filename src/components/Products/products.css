@@ -4,23 +4,36 @@
  align-items: start;
  justify-content: center;
 }
+.slider {
+    width: 60%;
+}
 
 @media screen and (min-width: 1201px) and (max-width: 1920px) {
 
 }
 
 @media screen and (min-width: 851px) and (max-width: 1240px) {
-
+    .slider {
+        width: 60%;
+        height: 24em;
+    }
 }
 
 @media screen and (min-width: 651px) and (max-width: 850px) {
     .app_products {
         width: 90%;
     }
+    .slider {
+        width: 60%;
+        height: 24em;
+    }
 }
 
 @media screen and (max-width: 650px) {
     .app_products {
         flex-direction: column;
+    }
+    .slider {
+        width: 100%;
     }
 }

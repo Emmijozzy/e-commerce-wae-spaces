@@ -10,6 +10,7 @@ import Blogs from '../../components/Blogs/Blogs'
 import Newsletter from '../../components/Newsletter/Newsletter'
 import Footer from '../../components/Footer/Footer'
 import Product from '../Product/Product'
+import SliderExaple from '../../components/SliderExample/SliderExample'
 // import Sidebar from '../../components/Sidebar/Sidebar'
 // import ProductList from '../../components/ProductList/ProductList'
 // import AlertComponent from '../../components/Alert/AlertComponent'
@@ -28,6 +29,7 @@ const Home = () => {
                 <Quote />
                 <Products />
                 <Blogs />
+                {/* <SliderExaple /> */}
             </div>
         </>
     )
