@@ -46,7 +46,7 @@ const Category: FC = () => {
                     <Swiper 
                         slidesPerView={3}
                         spaceBetween={10}
-                        slidesPerGroup={3}
+                        slidesPerGroup={1}
                         loop={true}
                         loopFillGroupWithBlank={true}
                         pagination={{

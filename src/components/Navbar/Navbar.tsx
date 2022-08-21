@@ -30,11 +30,11 @@ const Navbar: FC = () => {
                 </nav>
 
                 <div className='navicon'>
-                    <button
+                    {/* <button
                     onClick={() => dispatch(toggleCart(true))}
                     >
                         <FaSearch size={'2em'} />
-                    </button>
+                    </button> */}
 
                     <button
                     onClick={() => dispatch(toggleCart(true))}

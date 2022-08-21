@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './product.css'
+import Scroll from 'react-scroll'
+import { animateScroll as scroll } from 'react-scroll'
 import Carosel from '../../components/Carosel/Carosel'
 import { useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
@@ -26,6 +28,11 @@ const Product = () => {
     const handleClickItem = () => {
       setOpen(true)
    }
+
+   useEffect(() => {
+    scroll.scrollToTop()
+   }, [])
+
 
   return (
       <div className='product'>
