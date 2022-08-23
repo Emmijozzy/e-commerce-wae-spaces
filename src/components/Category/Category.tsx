@@ -55,7 +55,7 @@ const Category: FC = () => {
                         }}
                         navigation={true}
                         modules={[Pagination, Navigation]}
-                        className="mySwiper"
+                        className="Cat_Swiper"
                     >
                         {categoryData.map((catege, i) => (
                             <SwiperSlide key={i} ><CatCard img={catege.img} category={catege.category} /></SwiperSlide>

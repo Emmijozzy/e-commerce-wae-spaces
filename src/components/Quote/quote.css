@@ -36,7 +36,7 @@
 
 @media screen and (max-width: 650px) {
     .app_quote {
-        margin: 0 0 2em;
+        margin: -16px 0 -1em;
         width: 90%;
     }
     
