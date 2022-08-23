@@ -68,7 +68,7 @@ const Cart = () => {
             onOpen={handleClose}
             open={isOpen}
          >
-            <Box sx={{ width: 400, paddingTop: 2 }}>
+            <Box sx={{ width: 300, paddingTop: 2 }}>
                <AlertComponent
                   open={itemRemoved}
                   setOpen={() => dispatch(toggleItemRemoved(false))}

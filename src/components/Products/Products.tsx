@@ -14,7 +14,7 @@ const Products = () => {
     LazyLoad: true,
     speed: 500,
     slidesToShow: 2,
-    // autoplay: true,
+    autoplay: true,
     slidesToScroll: 1,
     // speed: 2000,
     autoplaySpeed: 3000,
