@@ -66,13 +66,13 @@
 
 @media screen and (min-width: 651px) and (max-width: 850px) {
     .carosel {
-        height: 35em;
+        height: 43em;
     }
 }
 
 @media screen and (max-width: 650px) {
     .carosel {
-        height: 35em;
+        height: 43em;
         width: 100%;
         margin: 0 auto 1em;
     }

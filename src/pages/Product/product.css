@@ -86,7 +86,7 @@
 
 @media screen and (min-width: 851px) and (max-width: 1240px) {
     .cart_side {
-        height: 31em;
+        height: 36em;
     }
     .sold-out {
         font-size: 0.9em;
@@ -128,7 +128,7 @@
 
 @media screen and (min-width: 651px) and (max-width: 850px) {
     .cart_side {
-        height: 24em;
+        height: 35em;
     }
     .sold-out {
         font-size: 0.9em;
