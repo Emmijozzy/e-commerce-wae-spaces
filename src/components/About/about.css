@@ -1,7 +1,7 @@
 .app_about {
-    min-height: 700px;
-    height: 100%;
-    width: 100%;
+    min-height: 800px;
+    height: 700px;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;

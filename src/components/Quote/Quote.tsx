@@ -4,11 +4,11 @@ import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const Quote = () => {
   return (
-    <AnimationOnScroll animateIn="animate__bounceIn">
-        <div className='app_quote flex-center'>
+    <div className='app_quote flex-center'>
+          <AnimationOnScroll className='animate' animateIn="animate__bounceIn">
                 <h3 className='quote_text'>Love and work are to people what water and sunshine are to plants</h3>
+          </AnimationOnScroll>
         </div>
-    </AnimationOnScroll>
   )
 }
 

@@ -1,6 +1,5 @@
 .app_blogs {
     display: flex;
-    width: 100%;
     justify-content: center;
     margin-top: 60px;
 }
@@ -16,6 +15,8 @@
 @media screen and (min-width: 651px) and (max-width: 850px) {
     .app_blogs {
         margin-top: 0;
+        width: 95%;
+
     }
 }
 

@@ -6,7 +6,13 @@
     font-family: var(--primary-font);
     font-weight: 300;
     text-align: center;
-    width: 95%;
+    width: 75%;
+}
+
+.animate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1920px) {
@@ -20,6 +26,7 @@
 @media screen and (min-width: 651px) and (max-width: 850px) {
     .app_quote {
         margin-top: 0;
+        width: 90%;
     }
 
     .quote_text {
@@ -30,6 +37,7 @@
 @media screen and (max-width: 650px) {
     .app_quote {
         margin: 0 0 2em;
+        width: 90%;
     }
     
     .quote_text {

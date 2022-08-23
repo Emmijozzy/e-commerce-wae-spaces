@@ -9,7 +9,7 @@
 
 .advert {
     align-items: center;
-    width: 40%;
+    width: 36%;
     margin: 20px 0;
     font-family: var(--primary-font);
     font-weight: 300;
@@ -20,6 +20,8 @@
 form {
     width: 70%;
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -46,6 +48,14 @@ input {
     margin: 0;
 }
 
+/* .animate__animated {
+   max-width: 100%;
+   width: 98%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+} */
+
 @media screen and (min-width: 1201px) and (max-width: 1920px) {
 
 }
@@ -53,6 +63,7 @@ input {
 @media screen and (min-width: 851px) and (max-width: 1240px) {
     .advert {
         font-size: 1.5em;
+        width: 33%;
     }
 
     form {
@@ -68,6 +79,7 @@ input {
     .advert {
         font-size: 1.4em;
         margin: 0;
+        width: 40%;
     }
 
     form {
