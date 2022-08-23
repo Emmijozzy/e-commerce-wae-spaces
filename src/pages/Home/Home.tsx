@@ -31,7 +31,7 @@ const Home = () => {
     let [color, setColor] = useState("#ffffff");
     return (
         <>
-            <div className={'home'}>
+            <div id='home' className={'home'}>
                 <Hero />
                 <About />
                 <Category />

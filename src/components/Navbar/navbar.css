@@ -4,7 +4,7 @@
    align-items: center;
    padding: 10px 0 10px 0;
    height: 70px;
-   width: 80%;
+   width: 90%;
    margin: 0  auto;
    /* box-shadow: 1px 2px 2px #444; */
 }
@@ -14,7 +14,7 @@
    position: fixed;
    /* margin: 0 60px; */
    display: flex;
-   width: 100vw;
+   width: 98%;
    top: 0px;
    z-index: 222;
 }
@@ -38,6 +38,10 @@ nav {
    width: 50%;
    height: 100%;
    z-index: 2222;
+}
+
+.links {
+   cursor: pointer;
 }
 
 .navicon {
@@ -84,7 +88,7 @@ button p {
 
 @media screen and (max-width: 650px) {
    .nav-container {
-      
+
    }
    
    nav {

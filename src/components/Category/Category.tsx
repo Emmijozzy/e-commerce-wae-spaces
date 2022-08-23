@@ -10,6 +10,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 // import required modules
 import { Pagination, Navigation } from "swiper";
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import { Element } from 'react-scroll';
 
 
 const Category: FC = () => {
@@ -38,7 +39,7 @@ const Category: FC = () => {
     
 
   return (
-    <div className="app_category ">
+    <div id='category' className="app_category ">
         <div className="container flex-center">
             <div className="category_box">
                 <h2 className='sub-head'>Categories</h2>
@@ -57,7 +58,7 @@ const Category: FC = () => {
                         className="mySwiper"
                     >
                         {categoryData.map((catege, i) => (
-                            <SwiperSlide><CatCard img={catege.img} category={catege.category} /></SwiperSlide>
+                            <SwiperSlide key={i} ><CatCard img={catege.img} category={catege.category} /></SwiperSlide>
                         ))}
                     </Swiper>
                 </div>

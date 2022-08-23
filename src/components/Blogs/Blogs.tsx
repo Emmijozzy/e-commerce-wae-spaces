@@ -19,7 +19,7 @@ const Blogs = () => {
     ]
   return (
     <div className='app_blogs'>
-        {blogs.map((blog, i) => (<BlogCard blog={blog}/>
+        {blogs.map((blog, i) => (<BlogCard key={i} blog={blog}/>
 ))}
     </div>
   )

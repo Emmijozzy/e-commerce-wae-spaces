@@ -17,7 +17,7 @@ const GroupLinks = ({head, link}: groupLink) => {
   return (
     <div className='group_link'>
         <div className="head">{head}</div>
-        {link.map((link, i) => (<div className='link'><Link to='#' >{link}</Link></div>))}
+        {link.map((link, i) => (<div key={i} className='link'><Link to='#' >{link}</Link></div>))}
     </div>
   )
 }

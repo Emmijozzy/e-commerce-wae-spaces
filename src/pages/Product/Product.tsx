@@ -6,6 +6,7 @@ import Carosel from '../../components/Carosel/Carosel'
 import { useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '../../store'
+import { useLocation } from "react-router-dom";
 // import produce from 'immer'
 import { addProduct } from '../../store/cart/cart.slice'
 
@@ -28,14 +29,14 @@ const Product = () => {
     const handleClickItem = () => {
       setOpen(true)
    }
+   const location = useLocation();
 
    useEffect(() => {
-    scroll.scrollToTop()
-   }, [])
-
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
-      <div className='product'>
+      <div id='product' className='product'>
         <Carosel image={foundProduct.image} />
         <div className="cart_side">
             {foundProduct.sold &&  <div className="sold-out"> Sold Out</div>}

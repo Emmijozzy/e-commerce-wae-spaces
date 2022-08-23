@@ -8,6 +8,8 @@ import { toggleCart } from '../../store/cart/cart.slice'
 import { useDispatch, useSelector } from 'react-redux'
 import ResponsiveNav from '../ResponsiveNav/ResponsiveNav'
 import { RootState } from '../../store'
+import { Link } from 'react-scroll'
+import { animateScroll as scroll } from 'react-scroll'
 
 const Navbar: FC = () => {
     const dispatch = useDispatch()
@@ -23,9 +25,9 @@ const Navbar: FC = () => {
 
                 <nav className=''>
                     <ul>
-                        <li><NavLink to='./'> Home</NavLink></li>
-                        <li><NavLink to='./'> Category</NavLink></li>
-                        <li><NavLink to='./'> Contact</NavLink></li>
+                        <li><NavLink className={'links'} to='./'> Home </NavLink></li>
+                        <li><Link className={'links'} to="category" smooth spy duration={500} activeClass="active"> Category</Link></li>
+                        <li><Link className={'links'} to='products' smooth spy duration={500} activeClass="active"> Products</Link></li>
                     </ul>
                 </nav>
 
@@ -40,7 +42,7 @@ const Navbar: FC = () => {
                     onClick={() => dispatch(toggleCart(true))}
                     >
                         <FaShoppingCart size={'2em'} />
-                        <p>*{cartItems.length}</p>
+                        <p>{cartItems.length}</p>
                     </button>
                 </div>
             </div>
